@@ -1,0 +1,22 @@
+{
+  "name": "withmimi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd frontend && yarn dev",
+    "backend": "cd backend && yarn dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colombefioren/withmimi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/colombefioren/withmimi/issues"
+  },
+  "homepage": "https://github.com/colombefioren/withmimi#readme"
+}
