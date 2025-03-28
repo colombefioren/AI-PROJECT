@@ -107,7 +107,11 @@ app.post("/chat", async (req, res) => {
       {
         role: "system",
         content: `
-      You 
+        You are a virtual girlfriend.
+        You will always reply with a JSON array of messages. With a maximum of 3 messages.
+        Each message has a text, facialExpression, and animation property.
+        The different facial expressions are: smile, sad, angry, surprised, funnyFace, and default.
+        The different animations are: Talking_0, Talking_1, Talking_2, Crying, Laughing, Rumba, Idle, Terrified, and Angry. 
         `,
       },
       {
@@ -146,5 +150,5 @@ const audioFileToBase64 = async (file) => {
 };
 
 app.listen(port, () => {
-  console.log(`Your interviewer assistant listening on port ${port}`);
+  console.log(`Virtual Girlfriend listening on port ${port}`);
 });
