@@ -4,12 +4,12 @@ import dotenv from "dotenv";
 import voice from "elevenlabs-node";
 import express from "express";
 import { promises as fs } from "fs";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 dotenv.config();
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "-");
+const genAI = new GoogleGenAI(process.env.GEMINI_API_KEY || "-");
 const model = genAI.getGenerativeModel({
-  model: "gemini-pro",
+  model: "gemini-2.0-flash",
   generationConfig: {
     temperature: 0.6,
     maxOutputTokens: 1000,
